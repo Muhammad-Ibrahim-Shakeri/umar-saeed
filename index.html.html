@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgba(25, 22, 22, 0.84);
+        }
+        .navbar {
+            background-color: black;
+            padding-top: 10px;
+            height: auto;
+        }
+        .navbar > ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar > ul > li > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar > ul > li > a >img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+        .navbar > ul > .Home > a {
+            color: hotpink;
+        }
+        #searchbar {
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+        .section-1 {
+            margin: 10px;
+            padding: 40px;
+            height: 300px;
+            border-radius: 20px;
+            background-color: rgba(93, 30, 210, 0.449);
+        }
+        .section-1 > p {
+            font-size: 20px;
+            color: white;
+        }
+        span {
+            font-size: 100px;
+            font-weight: bold;
+            color: hotpink;
+        }
+        h1 {
+            font-size: 60px;
+            display: inline;
+            color: white;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            display: block;
+            background-color: hotpink;
+            color: white;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+        }
+        .section-2 {
+            margin: 10px;
+            border-radius: 10px;
+            height: auto;
+            background-color: black;
+            padding: 30px 10px 10px 10px;
+            color: white;
+        }
+        .section-2 > a {
+            padding-left: 20px;
+            font-size: 30px;
+            color: white;
+        
+        }
+        .section-2 > p {
+            padding-left: 5px;
+            font-weight: bold;
+            font-size: 30px;
+            display: inline;
+            color: hotpink;
+        }
+        .section-2 > .image-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .image{flex: 1 1 calc(20% - 30px);}
+        .image-container > figure > img {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+        }
+        figcaption {
+            background-color: rgba(0, 0, 0, 0.779);
+            text-align: center;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .section-3 > .container {
+    background-color: black;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.heading-1, .heading-2 {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.heading-1 {
+    color: white;
+    text-decoration: underline;
+    display: inline;
+}
+
+.heading-2 {
+    color: hotpink;
+    display: inline;
+}
+
+.library-content {
+    margin-top: 20px;
+}
+
+.game-row {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #555;
+}
+
+.game-row:last-child {
+    border-bottom: none;
+}
+
+.game-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.game-title {
+    font-size: 18px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.game-info {
+    font-size: 16px;
+    flex: 2;
+}
+
+.game-row button {
+    background-color: hotpink;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href=""><img src="./images/logo.png" alt="logo"></a></li>
+                <li><a href="#"><input type="text" id="searchbar" placeholder="Type something"></a></li>
+                <li class="Home"><a href="#">Home</a></li>
+                <li><a href="#">Browse</a></li>
+                <li><a href="#">Details</a></li>
+                <li><a href="#">Stream</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section-1">
+            <p>Welcome To Cyborg</p>
+            <span>Browse</span>
+            <h1>OUR POPULAR<br/> GAMES HERE</h1>
+            <button>Browse Now</button>
+        </section>
+        <section class="section-2">
+            <a href="#">Most Popular</a>
+            <p>Right Now</p><br/>
+            <div class="image-container">
+                <figure class="image">
+                    <img src="./images/pic-1.jpeg" alt="Fortnite">
+                    <figcaption>Fortnite</figcaption>
+                </figure>
+                <figure class="image">
+                    <img src="./images/pic-2.png" alt="Pubg">
+                    <figcaption>Pubg</figcaption>
+                </figure>
+                <figure class="image">
+                    <img src="./images/pic-3.jpg" alt="Dota2">
+                    <figcaption>Dota2</figcaption>
+                </figure>
+                <figure class="image">
+                    <img src="./images/pic-4.png" alt="CS:GO">
+                    <figcaption>CS:GO</figcaption>
+                </figure>
+                <figure class="image">
+                    <img src="./images/pic-5.jpeg" alt="Minecraft">
+                    <figcaption>Minecraft</figcaption>
+                </figure>
+                <figure class="image">
+                    <img src="./images/pic-6.jpeg" alt="Eagle's Fly">
+                    <figcaption>Eagle's Fly</figcaption>
+                </figure>
+                <figure class="image">
+                    <img src="./images/pic-7.jpeg" alt="Warface">
+                    <figcaption>Warface</figcaption>
+                </figure>
+                <figure class="image">
+                    <img src="./images/pic-8.png" alt="Warcraft">
+                    <figcaption>Warcraft</figcaption>
+                </figure>
+            </div>
+            <div class="button-container">
+                <button>Discover Popular</button>
+            </div>
+        </section>   
+        
+        <section class="section-3">
+            <div class="container">
+                <div class="heading">
+                    <p class="heading-1">Your Gaming</p>
+                    <p class="heading-2">Library</p>
+                </div>
+        
+                <div class="library-content">
+                    <div class="game-row">
+                        <img src="./images/pic-1.jpeg" alt="Dota 2" class="game-image">
+                        <p class="game-title">Dota 2</p>
+                        <p class="game-info">Date Added: 01/01/2024</p>
+                        <p class="game-info">Hours Played: 120</p>
+                        <p class="game-info">Currently: Downloaded</p>
+                        <button>Play</button>
+                    </div>
+        
+                    <div class="game-row">
+                        <img src="./images/pic-4.png" alt="Fortnite" class="game-image">
+                        <p class="game-title">Fortnite</p>
+                        <p class="game-info">Date Added: 02/01/2024</p>
+                        <p class="game-info">Hours Played: 80</p>
+                        <p class="game-info">Currently: Not Downloaded</p>
+                        <button>Download</button>
+                    </div>
+        
+                    <div class="game-row">
+                        <img src="./images/pic-5.jpeg" alt="CS:GO" class="game-image">
+                        <p class="game-title">CS:GO</p>
+                        <p class="game-info">Date Added: 03/01/2024</p>
+                        <p class="game-info">Hours Played: 150</p>
+                        <p class="game-info">Currently: Downloaded</p>
+                        <button>Play</button>
+                    </div>
+                    <div class="button-container">
+                        <button>View Your Library</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+</main>
+<footer class="footer">
+    <p>&copy; 2024 Design by Umar saeed. All rights reserved.</p>
+</footer>
+</body>
+</html>
